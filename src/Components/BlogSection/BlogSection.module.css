@@ -1,0 +1,134 @@
+
+.blogSection {
+  background-color: var(--Base-White, #fff);
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--Gray-600, #475467);
+}
+
+.viewAllButton {
+  background-color: var(--Primary-600, #7f56d9);
+  color: var(--Base-White, #fff);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.blogPostCard {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+}
+
+.postContent {
+  padding: 24px;
+}
+
+.category {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Primary-700, #6941c6);
+  margin-bottom: 12px;
+}
+
+.postTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.postDescription {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Gray-600, #475467);
+  margin-bottom: 24px;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Gray-900, #101828);
+}
+
+.postDate {
+  font-size: 14px;
+  color: var(--Gray-600, #475467);
+}
+
+@media (max-width: 991px) {
+  .blogSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .viewAllButton {
+    margin-top: 24px;
+  }
+
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+}

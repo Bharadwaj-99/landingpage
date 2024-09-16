@@ -1,0 +1,70 @@
+.ctaSection {
+  background-color: var(--Gray-50, #f9fafb);
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--Gray-600, #475467);
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.learnMoreButton,
+.getStartedButton {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.learnMoreButton {
+  background-color: var(--Base-White, #fff);
+  color: var(--Gray-700, #344054);
+  border: 1px solid var(--Gray-300, #d0d5dd);
+}
+
+.getStartedButton {
+  background-color: var(--Primary-600, #7f56d9);
+  color: var(--Base-White, #fff);
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .ctaSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .learnMoreButton,
+  .getStartedButton {
+    width: 100%;
+  }
+}

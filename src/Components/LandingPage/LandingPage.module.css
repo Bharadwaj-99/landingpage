@@ -1,0 +1,5 @@
+.landingPage {
+  font-family: Inter, sans-serif;
+  color: var(--Gray-900, #101828);
+  background-color: var(--Base-White, #fff);
+}

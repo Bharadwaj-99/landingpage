@@ -1,0 +1,45 @@
+.socialProofSection {
+  background-color: var(--Base-White, #fff);
+  padding: 96px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.text {
+  color: var(--Gray-600, #475467);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .socialProofSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .logos {
+    justify-content: center;
+  }
+}

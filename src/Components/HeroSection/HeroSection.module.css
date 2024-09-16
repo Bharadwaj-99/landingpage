@@ -1,0 +1,131 @@
+.heroSection {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--Primary-50, #f9f5ff);
+  border: 1px solid var(--Primary-200, #e9d7fe);
+  border-radius: 16px;
+  padding: 4px 10px 4px 4px;
+  margin-bottom: 16px;
+}
+
+.badgeText {
+  background-color: var(--Base-White, #fff);
+  border: 1px solid var(--Primary-300, #d6bbfb);
+  border-radius: 16px;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Primary-700, #6941c6);
+}
+
+.badgeMessage {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Primary-700, #6941c6);
+}
+
+.badgeIcon {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  margin-bottom: 24px;
+}
+
+.subheading {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--Gray-600, #475467);
+  margin-bottom: 48px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.demoButton,
+.signupButton {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.demoButton {
+  background-color: var(--Base-White, #fff);
+  color: var(--Gray-700, #344054);
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.signupButton {
+  background-color: var(--Primary-600, #7f56d9);
+  color: var(--Base-White, #fff);
+  border: none;
+}
+
+.imageContainer {
+  margin-top: 64px;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .heroSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .demoButton,
+  .signupButton {
+    width: 100%;
+  }
+}
